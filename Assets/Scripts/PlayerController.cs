@@ -23,10 +23,6 @@ public class PlayerController : MonoBehaviour {
 
 	}
 
-  void FixedUpdate () {
-
-  }
-
   // Emit Events
   void EmitToGameController(string Event) {
     //TODO: Make this access the Game Controller
