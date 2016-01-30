@@ -3,9 +3,9 @@ using System.Collections;
 
 public class GameControls : MonoBehaviour {
 
-  public Player main_player;
-  public Player alt_player;
-  public Player potential_mate;
+  public GameObject main_player;
+  public GameObject alt_player;
+  public GameObject potential_mate;
 
 	// Use this for initialization
 	void Start () {
