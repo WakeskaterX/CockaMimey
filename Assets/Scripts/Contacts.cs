@@ -22,7 +22,6 @@ public class Contacts : MonoBehaviour {
 	}
 
   void OnTriggerEnter(Collider col) {
-    Debug.Log("COLLISION"+col.gameObject.name);
     if (col.gameObject.name == "Character") {
       player_script.NotifyCollision(col_name);
     }

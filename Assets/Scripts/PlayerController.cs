@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour {
 
   string log_value;
 
+  GameControls gameControls;
 
 
 	// Use this for initialization
 	void Start () {
     log_value = "Testing123";
     debug_log.GetComponent<Text>().text = log_value;
+    gameControls = game_controller.GetComponent<GameControls>();
 	}
 
 	// Update is called once per frame
@@ -24,12 +26,12 @@ public class PlayerController : MonoBehaviour {
 	}
 
   // Emit Events
-  void EmitToGameController(string Event) {
+  void EmitToGameController(string col_event) {
     //TODO: Make this access the Game Controller
     // For now just log to screen
-    log_value = "EVENT "+Event+" Emitted";
+    log_value = "EVENT "+col_event+" Emitted";
     debug_log.GetComponent<Text>().text = log_value;
-    Debug.Log("Hit "+Event);
+    gameControls.PlayerCollisionEvent(col_event);
   }
 
   public void NotifyCollision(string object_name) {

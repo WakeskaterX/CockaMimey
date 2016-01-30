@@ -19,11 +19,11 @@ public class CameraController : MonoBehaviour {
     }
 
     if (vert != 0) {
-      transform.Rotate(new Vector3(vert * 3, 0, 0));
+      transform.Rotate(new Vector3(vert * -3, 0, 0));
     }
 
     if (tilt != 0) {
-      transform.Rotate(new Vector3(0, 0, tilt * 3));
+      transform.Rotate(new Vector3(0, 0, tilt * -3));
     }
 
     if (reset) {
