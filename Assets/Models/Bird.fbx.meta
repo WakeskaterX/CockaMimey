@@ -1,0 +1,345 @@
+fileFormatVersion: 2
+guid: 2bcf084a208d48747a79aba4679a48a7
+timeCreated: 1454194869
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: beak_fat
+    100002: beak_long
+    100004: beak_short
+    100006: //RootNode
+    100008: breast_feather
+    100010: breast_feather1
+    100012: breast_feather2
+    100014: breast_feather3
+    100016: breast_feather4
+    100018: breast_feather5
+    100020: breast_feather6
+    100022: breast_feather7
+    100024: breast_feather8
+    100026: breast_feathers
+    100028: eye_l
+    100030: eye_r
+    100032: eyes
+    100034: feather
+    100036: feather 1
+    100038: feather 2
+    100040: feather1
+    100042: feather1 1
+    100044: feather2
+    100046: feather2 1
+    100048: feather3
+    100050: feather4
+    100052: feet_feathers
+    100054: Head
+    100056: LowerNeck
+    100058: neck_feathers
+    100060: pasted__breast_feather
+    100062: pasted__breast_feather 1
+    100064: pasted__breast_feather1
+    100066: pasted__breast_feather1 1
+    100068: pasted__breast_feather2
+    100070: pasted__breast_feather2 1
+    100072: pasted__breast_feather3
+    100074: pasted__breast_feather3 1
+    100076: pasted__breast_feather4
+    100078: pasted__breast_feather4 1
+    100080: pasted__breast_feather5
+    100082: pasted__breast_feather5 1
+    100084: pasted__breast_feather6
+    100086: pasted__breast_feather6 1
+    100088: pasted__breast_feather7
+    100090: pasted__breast_feather7 1
+    100092: pasted__breast_feather8
+    100094: pasted__breast_feather8 1
+    100096: plume
+    100098: plume1
+    100100: plume2
+    100102: UpperNeck
+    100104: wing
+    100106: wing 1
+    100108: wing1
+    100110: wing1 1
+    100112: wing2
+    100114: wing2 1
+    100116: wing_l
+    100118: wing_r
+    400000: beak_fat
+    400002: beak_long
+    400004: beak_short
+    400006: //RootNode
+    400008: breast_feather
+    400010: breast_feather1
+    400012: breast_feather2
+    400014: breast_feather3
+    400016: breast_feather4
+    400018: breast_feather5
+    400020: breast_feather6
+    400022: breast_feather7
+    400024: breast_feather8
+    400026: breast_feathers
+    400028: eye_l
+    400030: eye_r
+    400032: eyes
+    400034: feather
+    400036: feather 1
+    400038: feather 2
+    400040: feather1
+    400042: feather1 1
+    400044: feather2
+    400046: feather2 1
+    400048: feather3
+    400050: feather4
+    400052: feet_feathers
+    400054: Head
+    400056: LowerNeck
+    400058: neck_feathers
+    400060: pasted__breast_feather
+    400062: pasted__breast_feather 1
+    400064: pasted__breast_feather1
+    400066: pasted__breast_feather1 1
+    400068: pasted__breast_feather2
+    400070: pasted__breast_feather2 1
+    400072: pasted__breast_feather3
+    400074: pasted__breast_feather3 1
+    400076: pasted__breast_feather4
+    400078: pasted__breast_feather4 1
+    400080: pasted__breast_feather5
+    400082: pasted__breast_feather5 1
+    400084: pasted__breast_feather6
+    400086: pasted__breast_feather6 1
+    400088: pasted__breast_feather7
+    400090: pasted__breast_feather7 1
+    400092: pasted__breast_feather8
+    400094: pasted__breast_feather8 1
+    400096: plume
+    400098: plume1
+    400100: plume2
+    400102: UpperNeck
+    400104: wing
+    400106: wing 1
+    400108: wing1
+    400110: wing1 1
+    400112: wing2
+    400114: wing2 1
+    400116: wing_l
+    400118: wing_r
+    2300000: beak_fat
+    2300002: beak_long
+    2300004: beak_short
+    2300006: //RootNode
+    2300008: breast_feather
+    2300010: breast_feather1
+    2300012: breast_feather2
+    2300014: breast_feather3
+    2300016: breast_feather4
+    2300018: breast_feather5
+    2300020: breast_feather6
+    2300022: breast_feather7
+    2300024: breast_feather8
+    2300026: eye_l
+    2300028: eye_r
+    2300030: feather
+    2300032: feather 1
+    2300034: feather 2
+    2300036: feather1
+    2300038: feather1 1
+    2300040: feather2
+    2300042: feather2 1
+    2300044: feather3
+    2300046: feather4
+    2300048: Head
+    2300050: LowerNeck
+    2300052: pasted__breast_feather
+    2300054: pasted__breast_feather 1
+    2300056: pasted__breast_feather1
+    2300058: pasted__breast_feather1 1
+    2300060: pasted__breast_feather2
+    2300062: pasted__breast_feather2 1
+    2300064: pasted__breast_feather3
+    2300066: pasted__breast_feather3 1
+    2300068: pasted__breast_feather4
+    2300070: pasted__breast_feather4 1
+    2300072: pasted__breast_feather5
+    2300074: pasted__breast_feather5 1
+    2300076: pasted__breast_feather6
+    2300078: pasted__breast_feather6 1
+    2300080: pasted__breast_feather7
+    2300082: pasted__breast_feather7 1
+    2300084: pasted__breast_feather8
+    2300086: pasted__breast_feather8 1
+    2300088: UpperNeck
+    2300090: wing
+    2300092: wing 1
+    2300094: wing1
+    2300096: wing1 1
+    2300098: wing2
+    2300100: wing2 1
+    3300000: beak_fat
+    3300002: beak_long
+    3300004: beak_short
+    3300006: //RootNode
+    3300008: breast_feather
+    3300010: breast_feather1
+    3300012: breast_feather2
+    3300014: breast_feather3
+    3300016: breast_feather4
+    3300018: breast_feather5
+    3300020: breast_feather6
+    3300022: breast_feather7
+    3300024: breast_feather8
+    3300026: eye_l
+    3300028: eye_r
+    3300030: feather
+    3300032: feather 1
+    3300034: feather 2
+    3300036: feather1
+    3300038: feather1 1
+    3300040: feather2
+    3300042: feather2 1
+    3300044: feather3
+    3300046: feather4
+    3300048: Head
+    3300050: LowerNeck
+    3300052: pasted__breast_feather
+    3300054: pasted__breast_feather 1
+    3300056: pasted__breast_feather1
+    3300058: pasted__breast_feather1 1
+    3300060: pasted__breast_feather2
+    3300062: pasted__breast_feather2 1
+    3300064: pasted__breast_feather3
+    3300066: pasted__breast_feather3 1
+    3300068: pasted__breast_feather4
+    3300070: pasted__breast_feather4 1
+    3300072: pasted__breast_feather5
+    3300074: pasted__breast_feather5 1
+    3300076: pasted__breast_feather6
+    3300078: pasted__breast_feather6 1
+    3300080: pasted__breast_feather7
+    3300082: pasted__breast_feather7 1
+    3300084: pasted__breast_feather8
+    3300086: pasted__breast_feather8 1
+    3300088: UpperNeck
+    3300090: wing
+    3300092: wing 1
+    3300094: wing1
+    3300096: wing1 1
+    3300098: wing2
+    3300100: wing2 1
+    4300000: Bird
+    4300002: LowerNeck
+    4300004: UpperNeck
+    4300006: Head
+    4300008: beak_short
+    4300010: beak_long
+    4300012: beak_fat
+    4300014: feather
+    4300016: feather1
+    4300018: feather2
+    4300020: feather
+    4300022: feather1
+    4300024: feather2
+    4300026: feather
+    4300028: feather3
+    4300030: feather4
+    4300032: eye_r
+    4300034: eye_l
+    4300036: pasted__breast_feather
+    4300038: pasted__breast_feather1
+    4300040: pasted__breast_feather2
+    4300042: pasted__breast_feather3
+    4300044: pasted__breast_feather4
+    4300046: pasted__breast_feather5
+    4300048: pasted__breast_feather6
+    4300050: pasted__breast_feather7
+    4300052: pasted__breast_feather8
+    4300054: breast_feather
+    4300056: breast_feather1
+    4300058: breast_feather2
+    4300060: breast_feather3
+    4300062: breast_feather4
+    4300064: breast_feather5
+    4300066: breast_feather6
+    4300068: breast_feather7
+    4300070: breast_feather8
+    4300072: wing
+    4300074: wing1
+    4300076: wing2
+    4300078: wing
+    4300080: wing1
+    4300082: wing2
+    4300084: pasted__breast_feather
+    4300086: pasted__breast_feather1
+    4300088: pasted__breast_feather2
+    4300090: pasted__breast_feather3
+    4300092: pasted__breast_feather4
+    4300094: pasted__breast_feather5
+    4300096: pasted__breast_feather6
+    4300098: pasted__breast_feather7
+    4300100: pasted__breast_feather8
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

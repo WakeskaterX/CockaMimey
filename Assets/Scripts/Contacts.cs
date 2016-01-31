@@ -3,15 +3,15 @@ using System.Collections;
 
 public class Contacts : MonoBehaviour {
 
-  public GameObject player;
+  public GameObject game_controller;
   public string col_name;
 
-  PlayerController player_script;
+  GameControls game_cont;
   Renderer obj_renderer;
 
 	// Use this for initialization
 	void Start () {
-    player_script = player.GetComponent<PlayerController>();
+    game_cont = game_controller.GetComponent<GameControls>();
     obj_renderer = GetComponent<Renderer>();
     obj_renderer.enabled = false;
 	}
@@ -23,7 +23,15 @@ public class Contacts : MonoBehaviour {
 
   void OnTriggerEnter(Collider col) {
     if (col.gameObject.name == "Character") {
-      player_script.NotifyCollision(col_name);
+      //Debug.Log("Collision with Character: "+col_name+" with "+col.gameObject.name);
+      game_cont.PlayerCollisionEvent(col_name);
+    }
+  }
+
+  void OnTriggerExit(Collider col) {
+    if (col_name == "TR" || col_name == "TL") {
+      Debug.Log("COLLISION EXIT:"+col_name);
+      game_cont.NotifyCollisionExit();
     }
   }
 }
