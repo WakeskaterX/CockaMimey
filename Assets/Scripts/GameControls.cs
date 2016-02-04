@@ -11,7 +11,8 @@ public class GameControls : MonoBehaviour {
   public GameObject alt_player;
   public GameObject female;
   public GameObject camera_obj;
-
+  public GameObject music_track2;
+  public GameObject feather_particles;
   public GameObject contact_rig;
   public float max_action_time = 2F;
   public Text debug_text;
@@ -38,16 +39,20 @@ public class GameControls : MonoBehaviour {
   bool competitor_turn_active = false;
   bool waiting_for_player_entry = false;
   Competitor competitor_script;
+
+  FemaleMovement fem_move;
   string current_event = "--";
   string desired_event = "NN";
   List<string> existing_chain;
   Queue<string> event_chain = new Queue<string>();
   float action_time = 0F;
   System.Random rand = new System.Random();
+  int reset_index = 0;
 
   AudioSource audio_source;
   AudioSource female_source;
   AudioSource camera_music;
+  AudioSource track2;
 
 	// Use this for initialization
 	void Start () {
@@ -55,6 +60,8 @@ public class GameControls : MonoBehaviour {
     audio_source = GetComponent<AudioSource>();
     female_source = female.GetComponent<AudioSource>();
     camera_music = camera_obj.GetComponent<AudioSource>();
+    track2 = music_track2.GetComponent<AudioSource>();
+    fem_move = female.GetComponent<FemaleMovement>();
     ResetGame();
 	}
 
@@ -116,7 +123,7 @@ public class GameControls : MonoBehaviour {
 
   //Player & Competitor Turns
   public void StartPlayerTurn (string[] events_to_do) {
-    female.transform.rotation = Quaternion.Euler(0, 0, 0);
+    fem_move.TurnToPlayer();
     WriteDebug("Player Turn Started");
     player_turn_active = true;
     waiting_for_player_entry = false;
@@ -132,7 +139,7 @@ public class GameControls : MonoBehaviour {
   }
 
   public void StartCompetitorTurn () {
-    female.transform.rotation = Quaternion.Euler(0, -80, 0);
+    fem_move.TurnToCompetitor();
     competitor_turn_active = true;
     competitor_script.StartCompetitorsTurn(existing_chain.ToArray());
   }
@@ -148,6 +155,7 @@ public class GameControls : MonoBehaviour {
   void ProcessSuccess() {
     StartTimer();
     PlayRandomBird();
+    feather_particles.GetComponent<ParticleSystem>().Play();
     try {
       current_event = "-";
       desired_event = event_chain.Dequeue();
@@ -196,14 +204,16 @@ public class GameControls : MonoBehaviour {
     WriteDebug("You Lose");
     audio_source.clip = narrator_lose;
     audio_source.PlayDelayed(2f);
+    camera_music.Stop();
     TurnPlayerOff();
+    reset_index = 5;
     Invoke("ResetGame", 20f);
   }
 
   void ResetGame() {
     existing_chain = new List<string>();
-    narration_index = 0;
-    camera_music.Play();
+    narration_index = reset_index;
+    track2.Play();
     Invoke("IntroNarration", 4f);
   }
 
@@ -215,6 +225,9 @@ public class GameControls : MonoBehaviour {
 
   void IntroNarration() {
     if (narration_index >= narration_series.Length) {
+      fem_move.TurnToCompetitor();
+      track2.Stop();
+      camera_music.Play();
       Invoke("StartCompetitorTurn", 6f);
     } else {
       audio_source.clip = narration_series[narration_index];
@@ -238,6 +251,7 @@ public class GameControls : MonoBehaviour {
   }
 
   void PlayRandomMatePositive() {
+    fem_move.PlayParticles();
     var a = rand.Next(female_positive.Length);
     female_source.clip = female_positive[a];
     female_source.Play();
